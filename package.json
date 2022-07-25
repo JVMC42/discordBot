@@ -1,19 +1,23 @@
 {
-  "name": "discordbot",
+  "name": "bot-discord-music",
   "version": "1.0.0",
-  "description": "Bot para o discord",
-  "main": "index.js",
+  "description": "",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JVMC42/discordBot.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JVMC42/discordBot/issues"
+  "dependencies": {
+    "discord-player": "5.1.0",
+    "discord.js": "13.1.0",
+    "ffmpeg-static": "4.4.0",
+    "opusscript": "0.0.8",
+    "ytdl-core": "^4.11.0"
   },
-  "homepage": "https://github.com/JVMC42/discordBot#readme"
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
