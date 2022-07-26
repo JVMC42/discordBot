@@ -1,6 +1,6 @@
 const { Client } = require("discord.js");
 const { Player } = require("discord-player");
-const { prefix, token } = require("../config.json");
+const { prefix, token } = require("./config.json");
 
 const client = new Client({
   restTimeOffset: 0,
