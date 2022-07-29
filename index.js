@@ -1,6 +1,8 @@
 const { Client } = require("discord.js");
 const { Player } = require("discord-player");
+const express = require("express");
 const { prefix, token } = require("./config.json");
+const app = express();
 
 const client = new Client({
   restTimeOffset: 0,
@@ -36,4 +38,6 @@ client.on("messageCreate", (msg) => {
   require("./commands")(client, msg, args, command);
 });
 
-client.login(token);
+client.login(token)
+
+app.listen(process.env.PORT || 3000)
