@@ -1,7 +1,7 @@
-const { Client } = require("discord.js");
-const { Player } = require("discord-player");
-const express = require("express");
-const { prefix, token } = require("./config.json");
+const { Client } = require("discord.js")
+const { Player } = require("discord-player")
+const express = require("express")
+const { prefix, token } = require("./config.json")
 const app = express();
 require('dotenv').config()
 
