@@ -3,6 +3,7 @@ const { Player } = require("discord-player");
 const express = require("express");
 const { prefix, token } = require("./config.json");
 const app = express();
+require('dotenv').config()
 
 const client = new Client({
   restTimeOffset: 0,
@@ -38,6 +39,6 @@ client.on("messageCreate", (msg) => {
   require("./commands")(client, msg, args, command);
 });
 
-client.login(token)
+client.login(process.env.TOKEN)
 
 app.listen(process.env.PORT || 3000)
